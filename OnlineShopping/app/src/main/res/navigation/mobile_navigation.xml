@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.onlineshopping.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_cart"
+            app:destination="@id/nav_cart"
+            app:popUpTo="@id/nav_home">
+        <argument
+            android:name="cartItem"
+            app:argType="com.example.onlineshopping.models.CartItem" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_account_info"
+        android:name="com.example.onlineshopping.ui.Account_info.Account_InfoFragment"
+        android:label="@string/account_information"
+        tools:layout="@layout/fragment_accountinfo" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.onlineshopping.ui.Cart.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" >
+        <argument
+            android:name="cartItem"
+            app:argType="com.example.onlineshopping.models.CartItem" />
+        <action
+            android:id="@+id/action_nav_cart_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_signout"
+        android:name="com.example.onlineshopping.ui.Signout.SignoutFragment"
+        android:label="fragment_signout"
+        tools:layout="@layout/fragment_signout" />
+</navigation>

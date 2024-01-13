@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/setup_profile"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck,TextSizeCheck" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/shopping"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"
+            android:hint="@string/NameUser"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/editTextContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:hint="@string/userContact"
+            android:inputType="phone"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Email Input Field -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextContact"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:hint="@string/Emailinput"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Address Input Field -->
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="10dp"
+            android:hint="@string/userAddress"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Date of Birth Input Field -->
+        <EditText
+            android:id="@+id/editTextDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAddress"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/userDoBinput"
+            android:inputType="date"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="45dp"
+            android:id="@+id/SubmitButton"
+            android:layout_below="@id/editTextDateOfBirth"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/proceed"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

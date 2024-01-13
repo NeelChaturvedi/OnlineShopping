@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/Login1"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck,TextSizeCheck" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/shopping"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_marginTop="100dp"
+            android:textSize="20sp"
+            android:ems="10"
+            android:hint="@string/Email"
+            tools:ignore="TextFields,VisualLintTextFieldSize"
+            android:autofillHints=""/>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginEmail"
+            android:layout_marginTop="60dp"
+            android:textSize="20sp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/Password"
+            tools:ignore="TextFields,VisualLintTextFieldSize"
+            android:autofillHints="" />
+
+        <Button
+            android:layout_width="145dp"
+            android:layout_height="45dp"
+            android:id="@+id/LoginButton"
+            android:layout_below="@id/loginPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/Login"
+            android:textColor="@color/white"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/RegisterRedirectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LoginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/Signupredirecttext"
+            android:textColor="@color/bluish"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
